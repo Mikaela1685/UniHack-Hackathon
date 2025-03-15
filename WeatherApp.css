@@ -7,15 +7,24 @@ h1 {
     font-size: 80px;
     text-align: center;
     padding-top: 20px;
-    color: lavender;
+    color: rgb(147, 147, 205);
 }
 
 .material-symbols-outlined {
     font-size: 80px;
-    color: lavender;
+    color: rgb(123, 123, 193);
 }
 
 h2 {
     text-align: center;
-    
+    font-family: 'Chewy';
+    font-size: 60px;
+    margin-top: -60px;
+}
+
+body {
+    background-image: url('Images/Temperature30-40.png');
+    background-repeat: no-repeat;  /* Prevents tiling */ 
+    background-size: cover;        /* Makes the image cover the entire element */ 
+    padding-top: 10px;
 }
