@@ -32,8 +32,9 @@ if ($temperature >= 0 && $temperature < 10) {
     <title>Cosmo Climate</title>
     <meta http-equiv="refresh" content="300"> <!-- refresh every 5 minutes -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"/>
+    <link rel="stylesheet" href="WeatherApp.css">
     <link rel="icon" type="image/png" href="images/Alien_Sprite1_Enhanced.png">
-    <style>
+    <!-- <style>
         body {
             font-family: Arial, sans-serif;
             padding: 20px;
@@ -51,7 +52,7 @@ if ($temperature >= 0 && $temperature < 10) {
         }
         h1 { font-size: 24px; }
         .weather { margin-top: 20px; }
-    </style>
+    </style> -->
 </head>
 <body>
 
@@ -61,7 +62,7 @@ if ($temperature >= 0 && $temperature < 10) {
         <pre><?= htmlspecialchars($output) ?></pre> 
     </div>
     
-    <?php if (isset($temperature)): ?>
+   <!-- <?php if (isset($temperature)): ?>
         <p><strong>Temperature: <?= htmlspecialchars($temperature) ?>°C</strong></p>
         <?php if ($temperature >= 0 && $temperature < 10):?>
             <p style="color: green;"><strong>The temperature is between 0-10 degrees!</strong></p>
@@ -74,7 +75,7 @@ if ($temperature >= 0 && $temperature < 10) {
         <?php else: ?>
             <p style="color: red;"><strong>Unknown temperature range.</strong></p>
         <?php endif; ?>
-    <?php endif; ?>
+    <?php endif; ?> -->
 </div>
 
 </body>
