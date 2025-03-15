@@ -1,5 +1,5 @@
 <?php
-$output = shell_exec("/Library/Frameworks/Python.framework/Versions/3.12/bin/python3 /Applications/MAMP/htdocs/htdocs/weather.py 2>&1");
+$output = shell_exec("weather.py");
 
 if (!$output) {
     $output = "Failed to fetch weather data.";
@@ -23,7 +23,10 @@ if (!$output) {
 
 <h1>Melbourne Weather (this will refresh every 5 mins)</h1>
 <div class="weather">
-    <?php echo htmlspecialchars($output); ?>
+    <?php echo htmlspecialchars($output); 
+    var_dump($output);
+    ?>
+    
 </div>
 
 </body>
