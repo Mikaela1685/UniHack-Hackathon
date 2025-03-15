@@ -4,5 +4,18 @@
 
 h1 {
     font-family: 'Chewy';
+    font-size: 80px;
     text-align: center;
+    padding-top: 20px;
+    color: lavender;
+}
+
+.material-symbols-outlined {
+    font-size: 80px;
+    color: lavender;
+}
+
+h2 {
+    text-align: center;
+    
 }
