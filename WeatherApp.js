@@ -11,6 +11,16 @@ fetch(`https://api.openweathermap.org/data/2.5/weather?&lat=${cityLattitude}&lon
 
    		// }
    	});
-
-// if (temperature < )
-
+/*
+if (temperature < 0 ) {
+  image_displayed = ;
+} else if (temperature < 10) {
+  image_displayed = ;   
+} else if (temperature < 20) {
+  image_displayed = ;   
+} else if (temperature < 30) {
+  image_displayed = ;   
+} else if (temperature <= 40) {
+  image_displayed = ;   
+}
+*/
