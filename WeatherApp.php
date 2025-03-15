@@ -31,7 +31,6 @@ if ($temperature >= 0 && $temperature < 10) {
     <meta charset="UTF-8">
     <title>Cosmo Climate</title>
     <meta http-equiv="refresh" content="300"> <!-- refresh every 5 minutes -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"/>
     <link rel="stylesheet" href="WeatherApp.css">
     <link rel="icon" type="image/png" href="images/Alien_Sprite1_Enhanced.png">
     <!-- <style>
@@ -62,21 +61,29 @@ if ($temperature >= 0 && $temperature < 10) {
         <pre><?= htmlspecialchars($output) ?></pre> 
     </div>
     
-   <!-- <?php if (isset($temperature)): ?>
-        <p><strong>Temperature: <?= htmlspecialchars($temperature) ?>°C</strong></p>
+   <?php if (isset($temperature)): ?>
+        <h1> It's <?= htmlspecialchars($temperature) ?>°C in <span style="color: red;"> MELBOURNE </span>, so let's check in with our friend, Bobby the Alien, on Planet 15325!</h1>
+        <div class="alien1">
+    		<img src="Images/Alien_Sprite1_Enhanced.png" width="200" alt="alien">
+    	</div>
+    
         <?php if ($temperature >= 0 && $temperature < 10):?>
             <p style="color: green;"><strong>The temperature is between 0-10 degrees!</strong></p>
+    
         <?php elseif ($temperature >= 10 && $temperature < 20): ?>
             <p style="color: green;"><strong>The temperature is between 10-20 degrees!</strong></p>
+    
         <?php elseif ($temperature >= 20 && $temperature < 30): ?>
             <p style="color: green;"><strong>The temperature is between 20-30 degrees!</strong></p>
+    
         <?php elseif ($temperature >= 30 && $temperature < 40): ?>
-            <p style="color: green;"><strong>The temperature is between 30-40 degrees! Background changed.</strong></p>
+            <p style="color: green;"><strong>The temperature is between 30-40 degrees!</strong></p>
+    
         <?php else: ?>
-            <p style="color: red;"><strong>Unknown temperature range.</strong></p>
+            <h1>BEWARE ALIEN WEATHER !!</h1> 
         <?php endif; ?>
-    <?php endif; ?> -->
-</div>
-
+        <?php endif; ?>
+    </div>
+    
 </body>
 </html>
