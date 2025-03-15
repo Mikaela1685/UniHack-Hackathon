@@ -28,8 +28,10 @@ weather_time = latest_obs['local_date_time']
 # extract rainfall percentage (if available)
 rainfall = latest_obs.get('precip_rate', 0)
 
-# display weather information
-print('Weather at Melbourne: ')
+
+print(temp)
+#output facts
+print(f'Weather at Melbourne:')
 print(f"time {weather_time}:")
 print(f"temp: {temp} °C (Feels like {apparent_temp} °C)")
 print(f"wind: {wind_dir} at {wind_speed} km/h")
