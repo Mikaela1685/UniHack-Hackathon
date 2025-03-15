@@ -1,5 +1,5 @@
 <?php
-// run the Python script and capture output
+// NOTE - edit the path for the path where the python file is located on your laptop
 $output = shell_exec("/Library/Frameworks/Python.framework/Versions/3.12/bin/python3 /Applications/MAMP/htdocs/htdocs/weather.py 2>&1");
 
 // handle failure
