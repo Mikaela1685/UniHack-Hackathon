@@ -33,14 +33,13 @@ body {
 }
 
 .alien1 {
-    animation: mymove 7s infinite;
+    text-align: center;
+    animation: mymove 1s infinite;
     position: relative;
 }
 
 @keyframes mymove {
-    0%   {left:0px; top:0px;}
-    25%  {left:200px; top:0px;}
-    50%  {left:200px; top:200px;}
-    75%  {left:0px; top:200px;}
-    100% {left:0px; top:0px;}
+    0%   {top: 0px;}
+    50%  {top: -10px;}
+    100% {top: 0px;}
 }
