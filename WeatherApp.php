@@ -36,7 +36,7 @@ if ($temperature >= 0 && $temperature < 10) {
     <link rel="icon" type="image/png" href="images/Alien_Sprite1_Enhanced.png">
     <link rel="stylesheet" href="WeatherApp.css">
 
-   <!-- <style>
+    <style>
         body {
             font-family: Arial, sans-serif;
             padding: 20px;
@@ -52,35 +52,33 @@ if ($temperature >= 0 && $temperature < 10) {
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
             text-align: center;
         }
-        h1 { font-size: 24px; }
+        h1 { font-size: 50px; }
         .weather { margin-top: 20px; }
-    </style> -->
+    </style>
 </head>
 <body>
-    <div class="container">
-        <div class="weather">
-            <pre><?= htmlspecialchars($output) ?></pre> 
-        </div>
-        
-        <?php if (isset($temperature)): ?>
-                <h1>It's <?= htmlspecialchars($temperature) ?>°C in <span style="color: red;">MELBOURNE</span>, but let's check in with our alien buddy, Bobby, on our twin planet!</h1>
-                    <div class="alien1">
-            		<img src="Images/Alien_Sprite1_Enhanced.png" width="200" alt="alien">
-            	</div>
-        <?php if ($temperature >= 0 && $temperature < 10):?>
-            <p style="color: green;"><strong>The temperature is between 0-10 degrees!</strong></p>
-        <?php elseif ($temperature >= 10 && $temperature < 20): ?>
-            <p style="color: green;"><strong>The temperature is between 10-20 degrees!</strong></p>
-        <?php elseif ($temperature >= 20 && $temperature < 30): ?>
-            <p style="color: green;"><strong>The temperature is between 20-30 degrees!</strong></p>
-        <?php elseif ($temperature >= 30 && $temperature < 40): ?>
-            <p style="color: green;"><strong>The temperature is between 30-40 degrees!</strong></p>
-        <?php else: ?>
-            <p style="color: red;"><strong>Unknown temperature range.</strong></p>
-        <?php endif; ?>
-        <?php endif; ?>
 
-    </div>
+<!-- <h1> <span class="material-symbols-outlined"> partly_cloudy_day </span> BEWARE ALIEN WEATHER !!</h1>
+<h1> It's *temp* in <span style="color: red;"> MELBOURNE </span>, let's check in with <br> our twin planet where Bobby the alien lives </h1>
+	<div class="alien1">
+		<img src="Images/Alien_Sprite1_Enhanced.png" width="200" alt="alien">
+	</div> -->
+
+
+    <h2 style='font-size:50px; font-family: chewy;text-align: center; -webkit-text-stroke: 2px white;'>Cosmo Climate</h1>
+
+    <h1>
+        It's <?= isset($temperature) ? htmlspecialchars($temperature) . '°C' : 'unknown' ?> in 
+        <span style="color: red;"> MELBOURNE </span>, let's check in with <br> 
+        our twin planet where Bobby the alien lives
+        <div class='alien1'>
+            <img src="Images/Alien_Sprite1_Enhanced.png" width="200" alt="alien">
+        </div>
+    </h1>
+
+
+
+    
 
 </body>
 </html>
