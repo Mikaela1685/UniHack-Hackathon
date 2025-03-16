@@ -1,7 +1,7 @@
 <?php
 // NOTE - see where python file is located on laptop
 // change path according to where python is installed. 
-$output = shell_exec("/Library/Frameworks/Python.framework/Versions/3.12/bin/python3 /Applications/MAMP/htdocs/htdocs/weather.py 2>&1");
+$output = shell_exec("/Library/Frameworks/Python.framework/Versions/3.12/bin/python3 /Applications/MAMP/htdocs/htdocs/WeatherApp.py 2>&1");
 
 // handle failure
 if (!$output) {
