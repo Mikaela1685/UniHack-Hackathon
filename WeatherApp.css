@@ -2,7 +2,6 @@
 @import url(https://fonts.googleapis.com/css2?family=Chewy&display=swap);
 
 h1 {
-    font-family: chewy;
     font-size: 50px;
     text-align: center;
     padding: 160px 50px 30px 50px;
@@ -14,6 +13,7 @@ body {
     background-repeat: no-repeat;  /* Prevents tiling */ 
     background-size: cover;        /* Makes the image cover the entire element */ 
     background-size: 1495px;
+    font-family: 'Chewy';
 }
 
 .alien1 {
