@@ -31,11 +31,11 @@ rainfall = latest_obs.get('precip_rate', 0)
 
 print(temp)
 #output facts
-print(f'Weather at Melbourne:')
-print(f"time {weather_time}:")
-print(f"temp: {temp} °C (Feels like {apparent_temp} °C)")
-print(f"wind: {wind_dir} at {wind_speed} km/h")
-print(f"humidity: {humidity}%")
+# print(f'Weather at Melbourne:')
+# print(f"time {weather_time}:")
+# print(f"temp: {temp} °C (Feels like {apparent_temp} °C)")
+# print(f"wind: {wind_dir} at {wind_speed} km/h")
+# print(f"humidity: {humidity}%")
 
 # display rain if it's greater than 0%
 if rainfall > 0:
