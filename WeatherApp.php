@@ -36,7 +36,7 @@ if ($temperature >= 0 && $temperature < 10) {
     <link rel="icon" type="image/png" href="images/Alien_Sprite1_Enhanced.png">
     <link rel="stylesheet" href="WeatherApp.css">
 
-    <style>
+   <!-- <style>
         body {
             font-family: Arial, sans-serif;
             padding: 20px;
@@ -54,7 +54,7 @@ if ($temperature >= 0 && $temperature < 10) {
         }
         h1 { font-size: 24px; }
         .weather { margin-top: 20px; }
-    </style>
+    </style> -->
 </head>
 <body>
 
